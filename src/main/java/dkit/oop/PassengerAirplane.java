@@ -17,6 +17,14 @@ public class PassengerAirplane extends Airplane {
 
     }
 
+    public ArrayList<String> getPassengerList() {
+        return passengerList;
+    }
+
+    public void setPassengerList(ArrayList<String> passengerList) {
+        this.passengerList = passengerList;
+    }
+
     public void addPassenger(String name) {
 
 

@@ -1,5 +1,7 @@
 package dkit.oop;
 
+import java.util.Objects;
+
 public abstract class Airplane {
 
     private int id;
@@ -25,4 +27,16 @@ public abstract class Airplane {
                 ", type='" + type + '\'' ;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Airplane airplane = (Airplane) o;
+        return id == airplane.id && Objects.equals(type, airplane.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id);
+    }
 } // end of Airplane

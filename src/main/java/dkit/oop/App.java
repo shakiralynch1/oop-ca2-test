@@ -55,7 +55,23 @@ public class App
 
         mgr.displayAllAirplanes(mgr.airplaneList);
 
+       mgr.displayAllPassengerAirplanes(mgr.airplaneList);
+        System.out.println(mgr.getAllCargoAirplanes(mgr.airplaneList));
 
+        System.out.println("Q3 6");
+        System.out.println(mgr.addPassengerNameToAirplane(101, "Shakira Lynch"));
+
+       mgr.displayAllAirplanes(mgr.airplaneList);
+
+
+        System.out.println("contain plane");
+        System.out.println(mgr.containsAirplance(passengerPlane1));
+
+        System.out.println("Find plane by passenger name");
+        System.out.println(mgr.findAirplaneByPassengerName("Tom Hardy"));
+
+        System.out.println("in order of type");
+        mgr.displayAllAirplanesInOrderOfType(mgr.airplaneList);
 
         //Question 4
         // Uncomment all the code below and implement the two methods
