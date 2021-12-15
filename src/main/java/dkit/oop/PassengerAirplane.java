@@ -1,21 +1,41 @@
 package dkit.oop;
 
 import java.util.ArrayList;
-import java.util.List;
 
-public class PassengerAirplane  {
+public class PassengerAirplane extends Airplane {
 
     // fields(Q2)
+    final int MAX_NUM_PASSENGERS;
+
+    private ArrayList<String> passengerList;
+
 
     PassengerAirplane(String type, int maxNumPassengers) {
-        // code here
+        super(type);
+        this.MAX_NUM_PASSENGERS=maxNumPassengers;
+        passengerList = new ArrayList<>();
 
     }
 
     public void addPassenger(String name) {
-        // code here
+
+
+           if(passengerList.size()< this.MAX_NUM_PASSENGERS){
+               passengerList.add(name);
+           }
+
+
+
+
 
     }
 
-
+    @Override
+    public String toString() {
+        return "PassengerAirplane{" +
+                super.toString()+
+                "MAX_NUM_PASSENGERS=" + MAX_NUM_PASSENGERS +
+                ", passengerList=" + passengerList +
+                '}';
+    }
 } // end of PassengerAirplane

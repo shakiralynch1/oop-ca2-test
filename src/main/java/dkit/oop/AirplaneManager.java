@@ -24,11 +24,19 @@ public class AirplaneManager {
     //Q3.
 
     // write add() method
-
-
-    public void displayAllAirplanes() {
-        // add code
+    public void add(Airplane airplane){
+        airplaneList.add(airplane);
     }
+
+
+    public void displayAllAirplanes(ArrayList<Airplane> airplaneList)
+  {
+            for(Airplane a: airplaneList){
+                System.out.println(a);
+
+            }
+  }
+
 
     public void displayAllPassengerAirplanes() {
         // add code
