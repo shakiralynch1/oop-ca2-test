@@ -6,6 +6,7 @@ import java.util.Scanner;
 
 /**
  * OOP CA2 December 2021 - Airplane Management System  STARTER CODE
+ * Shakira Lynch
  */
 public class App 
 {
